@@ -34,9 +34,9 @@
  </div>    
 <!-- next will be random score, adn wins and losses tracker-->
 <div class="row">
-        <div class="col-2" style = "background-color: saddlebrown">39</div>
+        <div class="col-2" style = "background-color: rgb(173, 22, 123)" id ="targetScore">targetScore</div>
         <div class="col-4" style = "background-color: seagreen">wins<br>losses</div>
-        <div class="col-6"></div>
+        <div class="col-6" style = "background-color: rgb(173, 22, 123)"id ="your-score">your-score</div>
       </div>
     </div>
              
@@ -45,20 +45,24 @@
  
  <div class="back">
         <button type="button" class="btn btn-primary">
-                Profile  <img class="cry-img" id="Cry1" src="assets/images/cry1.png" alt="Cry1"></span>
-                <span class="sr-only">unread messages
+                  <img class="cry-img" id="Cry1" src="assets/images/cry1.png" alt="Cry1">
+                <span class="sr-only">
               </button>
-        <img class="cry-img" id="Cry1" src="assets/images/cry1.png" alt="Cry1">
-      </div>
-      <div class="back">
-        <img class="cry-img" id="Cry2" src="assets/images/cry2.png" alt="Cry2">
-      </div>
-      <div class="back">
-        <img class="cry-img" id="Cry3" src="assets/images/cry3.png" alt="Cry3">
-      </div>
-      <div class="back">
-        <img class="cry-img" id="Cry4" src="assets/images/cry4.png" alt="Cry4">
-      </div>
+  
+              <button type="button" class="btn btn-primary">
+                  <img class="cry-img" id="Cry2" src="assets/images/cry2.png" alt="Cry2">
+                <span class="sr-only">
+              </button>            
+        
+              <button type="button" class="btn btn-primary">
+                 <img class="cry-img" id="Cry3" src="assets/images/cry3.png" alt="Cry3">
+                <span class="sr-only">
+              </button>
+
+              <button type="button" class="btn btn-primary">
+                  <img class="cry-img" id="Cry4" src="assets/images/cry4.png" alt="Cry4">
+                <span class="sr-only">
+                </button>
 
          </div>
      </div>
@@ -67,13 +71,16 @@
  <div class = "row">
         <div class = "col-lg-12">
                <div class="d-flex p-2 bd-highlight" style="background-color: deepskyblue" >Your total score is!</div>
-                   <div class = "sum" >
+                   <div class = "your-score" ><h2>0</h2>
                        
                     
                    </div>
                
         </div>
     </div>    
- 
+    <script
+    src="https://code.jquery.com/jquery-3.4.0.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
 </body>
 </html>
